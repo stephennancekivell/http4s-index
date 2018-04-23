@@ -1,10 +1,19 @@
 http4s-index
 ============
 
+http index server built with http4s.
+
+http-index lists the files and folders in a directory becoming a simple light weight web server.
+
+
+Usage
+---
+Host the current directory as a http server with this.
+
+```
+coursier launch com.stephenn:http4s-index_2.12:0.0.1
+```
+
 Publishing
 ---
-1) 
-2) 
-3) sbt +json4s/publishSigned
-4) sbt sonatypeReleaseAll
-4) bump version to snapshot
+1) sbt release with-defaults
