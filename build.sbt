@@ -17,3 +17,4 @@ lazy val root = (project in file("."))
     )
   )
 
+releasePublishArtifactsAction := PgpKeys.publishSigned.value
