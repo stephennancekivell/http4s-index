@@ -9,12 +9,26 @@ lazy val root = (project in file("."))
     version := "0.0.1-SNAPSHOT",
     scalaVersion := "2.12.4",
     libraryDependencies ++= Seq(
-      "org.http4s"      %% "http4s-blaze-server" % Http4sVersion,
-      "org.http4s"      %% "http4s-circe"        % Http4sVersion,
-      "org.http4s"      %% "http4s-dsl"          % Http4sVersion,
-      "org.specs2"     %% "specs2-core"          % Specs2Version % "test",
-      "ch.qos.logback"  %  "logback-classic"     % LogbackVersion
-    )
+      "org.http4s" %% "http4s-blaze-server" % Http4sVersion,
+      "org.http4s" %% "http4s-circe" % Http4sVersion,
+      "org.http4s" %% "http4s-dsl" % Http4sVersion,
+      "org.specs2" %% "specs2-core" % Specs2Version % "test",
+      "ch.qos.logback" % "logback-classic" % LogbackVersion
+    ),
+    homepage := Some(
+      url("https://github.com/stephennancekivell/http4s-index")),
+    scmInfo := Some(
+      ScmInfo(url("https://github.com/stephennancekivell/http4s-index"),
+              "git@github.com:stephennancekivell/http4s-index.git")),
+    developers := List(
+      Developer("stephennancekivell",
+                "Stephen Nancekivell",
+                "stephennancekivell@gmail.com",
+                url("https://stephenn.com"))),
+    licenses += ("Apache-2.0", url(
+      "http://www.apache.org/licenses/LICENSE-2.0")),
+    publishMavenStyle := true,
+    publishTo := sonatypePublishTo.value
   )
 
 releasePublishArtifactsAction := PgpKeys.publishSigned.value
