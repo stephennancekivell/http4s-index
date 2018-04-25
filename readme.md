@@ -11,7 +11,7 @@ Usage
 Host the current directory as a http server like below. This uses [coursier](http://get-coursier.io) to download and start http4s-index. 
 
 ```
-coursier launch com.stephenn:http4s-index_2.12:0.0.1
+coursier launch com.stephenn:http4s-index_2.12:0.0.2
 ```
 
 Publishing
