@@ -5,6 +5,7 @@ http index server built with [http4s](http://http4s.org).
 
 http-index lists the files and folders in a directory becoming a simple light weight web server.
 
+![demo](http4sindex.gif)
 
 Usage
 ---
